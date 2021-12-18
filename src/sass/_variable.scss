@@ -1,1 +1,25 @@
-$primaryColor:red;
+//width
+$desktopWidth: 1440px;
+$mobileWidth: 375px;
+
+//font
+@mixin googlefont($font) {
+    @import url('https://fonts.googleapis.com/css2?family=#{$font}');
+}
+@include googlefont(Barlow);
+@include googlefont(Fraunces);
+
+//Primary Color
+$primaryskyBlue:#3EBFFF;
+$primaryWhite: #ffffff;
+$primaryBlack:#0e0e0e;
+$primaryRed: #fe7867;
+$primaryYellow: #fad400;
+$primaryDarkBlue:  #19536b;
+$primaryCyan: #458c7e;
+
+//Neutral
+$grayishBlue: #5a636c;
+$desaturatedBlue: #23303e;
+$darkGrayishBlue: #818498;
+$grayishBlue: #a7abae;

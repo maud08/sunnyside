@@ -1,4 +1,42 @@
 //IMPORT
 @import 'variable';
+@import'normalize';
 @import 'header';
+@import 'main';
 @import 'footer';
+
+//GLOBAL
+body{
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $primaryBlack;
+}
+h1{
+    color: $primaryWhite;
+    font-weight: 900;
+    font-family: "Fraunces";
+    font-size: 6rem;
+    color: $primaryWhite;
+}
+h2{
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 2.9rem;
+    color: $desaturatedBlue;
+}
+h3{
+    font-family: "Fraunces";
+    font-weight: 900;
+    color: $desaturatedBlue;
+}
+p{
+    color: $grayishBlue;
+    line-height: 1.5;
+    font-weight: 600;
+}

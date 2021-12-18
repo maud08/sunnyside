@@ -1,0 +1,60 @@
+header{
+    background: $primaryskyBlue;
+}
+
+#nav-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+    width: calc(100% - 100px);
+}
+
+nav{
+    width: 25%;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        a{
+            font-family: "Barlow";
+            color: $primaryWhite;
+            padding: 0.75em 1em;
+            &:hover{
+                background: $primaryWhite;
+                color: $primaryBlack;
+                font-family: "Fraunces";
+                border-radius: 25% / 50%;
+            }
+        }
+    }
+    
+}
+
+#banner{
+    max-width: $desktopWidth;
+    margin: 0 auto;
+    position: relative;
+    h1{
+        position: absolute;
+        left: 24%;
+        top: 10%;
+        margin: 0;
+        &::after{
+            content: "";
+            background: url("/src/assets/img/icon-arrow-down.svg") no-repeat;
+            width: 36px;
+            height: 114px;
+            display: block;
+            left: 43%;
+            position: absolute;
+            top: 220%
+        }
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        
+    }
+}

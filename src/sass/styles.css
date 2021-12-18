@@ -340,7 +340,7 @@ template {
 }
 
 header {
-  background: #3EBFFF;
+  background: red;
 }
 
 #nav-logo {
@@ -377,6 +377,11 @@ nav ul a:hover {
   position: relative;
 }
 #banner h1 {
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Fraunces";
+  font-size: 6em;
+  color: #ffffff;
   position: absolute;
   left: 24%;
   top: 10%;
@@ -398,102 +403,6 @@ nav ul a:hover {
   margin: 0 auto;
 }
 
-.about {
-  display: flex;
-  flex-wrap: wrap;
-}
-.about .content {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.about .content .text {
-  flex: 1 1 50%;
-}
-.about .content img {
-  flex: 1 1 50%;
-}
-.about .content.inline {
-  flex: 1 1 50%;
-  position: relative;
-}
-
-.text-content {
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 0 9vw;
-}
-.text-content p {
-  padding: 0 0 2% 0;
-}
-.text-content a {
-  color: #23303e;
-  font-family: "Fraunces";
-  font-weight: 900;
-  text-transform: uppercase;
-  position: relative;
-}
-.text-content a:hover::after {
-  border-radius: 15%/100%;
-  content: "";
-  width: 100%;
-  height: 12px;
-  position: absolute;
-  top: 67%;
-  left: 0;
-  z-index: -1;
-}
-
-.link-yellow:hover::after {
-  background: #fad400;
-}
-
-.link-red:hover::after {
-  background: #fe7867;
-}
-
-.inline .text {
-  position: absolute;
-  margin: 40% 0 0 0;
-}
-.inline .text .text-content {
-  text-align: center;
-}
-
-.testimonilas {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.testimonilas h2 {
-  color: #818498;
-  flex: 1 1 100%;
-  text-align: center;
-  padding: 3vw;
-  text-transform: uppercase;
-}
-.testimonilas .content {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: calc((100% / 3) - 16vw);
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  padding: 0 8vw;
-}
-.testimonilas .content img {
-  border-radius: 50%;
-}
-.testimonilas .content p {
-  text-align: center;
-}
-.testimonilas .content .client-info {
-  text-align: center;
-}
-.testimonilas .content .client-info span {
-  color: #a7abae;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -505,7 +414,6 @@ nav ul a:hover {
 
 body {
   font-size: 18px;
-  font-family: "Barlow", sans-serif;
 }
 
 li {
@@ -514,34 +422,6 @@ li {
 
 a {
   text-decoration: none;
-  color: #0e0e0e;
-}
-
-h1 {
-  color: #ffffff;
-  font-weight: 900;
-  font-family: "Fraunces";
-  font-size: 6rem;
-  color: #ffffff;
-}
-
-h2 {
-  font-family: "Fraunces";
-  font-weight: 900;
-  font-size: 2.9rem;
-  color: #23303e;
-}
-
-h3 {
-  font-family: "Fraunces";
-  font-weight: 900;
-  color: #23303e;
-}
-
-p {
-  color: #a7abae;
-  line-height: 1.5;
-  font-weight: 600;
 }
 
 /*# sourceMappingURL=styles.css.map */
