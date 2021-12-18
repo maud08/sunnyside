@@ -1,11 +1,14 @@
 //IMPORT
 @import 'variable';
-@import'normalize';
 @import 'header';
 @import 'main';
 @import 'footer';
 
 //GLOBAL
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-size: 18px;
     font-family: "Barlow", sans-serif;

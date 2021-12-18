@@ -64,6 +64,9 @@
     .text-content {
         text-align: center;
     }
+    h2,p{
+        color: $primaryDarkBlue;
+    }
 }
 
 //TESTIMONiLAS
@@ -71,11 +74,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: 6vw 0 10vw 0;
     h2{
         color: $darkGrayishBlue;
         flex: 1 1 100%;
         text-align: center;
-        padding: 3vw;
+        padding: 0 0 3vw 0;
         text-transform: uppercase;
     }
     .content{
@@ -97,6 +101,19 @@
             span{
                 color: $grayishBlue;
             }
+        }
+    }
+}
+
+//GALLERY
+.gallery{
+    display: flex;
+    align-items: center;
+    div{
+        flex: 1 1 auto;
+        img{
+            max-width: 100%;
+            display: block;
         }
     }
 }

@@ -1,2 +1,30 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-flow: column;
+    padding: 5vw 0 0 0;
+    background: $lightCyan;
+    svg path{
+        fill: $primaryCyan;
+    }
+
+    .menu,
+    .social-network {
+        display: flex;
+        justify-content: space-between;
+        margin: 2vw 0;
+        a{
+            padding: 1vw;
+            color: $primaryCyan;
+        }
+    }
+
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: $primaryDarkBlue; 
+}
