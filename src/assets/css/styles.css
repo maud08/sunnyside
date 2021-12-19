@@ -242,11 +242,11 @@ footer .social-network a {
     left: 5%;
     padding: 6vw;
     width: calc(90% - 12vw);
-    transition: top 1s ease;
+    transition: top 0.5s ease;
   }
   nav.active {
     visibility: visible;
-    top: 16vh;
+    top: 12vh;
   }
   nav ul {
     flex-direction: column;

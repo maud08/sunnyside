@@ -31,10 +31,10 @@
         left: 5%;
         padding: 6vw;
         width: calc(90% - 12vw);
-        transition: top 1s ease;
+        transition: top 0.5s ease;
         &.active{
             visibility: visible;
-            top: 16vh;
+            top: 12vh;
         }
         ul{
             flex-direction: column;
