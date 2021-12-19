@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/img/favicon-32x32.png">
         <link rel="stylesheet" href="./src/assets/css/styles.css">
-
+        <script src="/src/js/hamburger.js" defer></script>
         <title>Frontend Mentor | Sunnyside agency landing page</title>
     </head>
     <body>
@@ -16,17 +17,22 @@
                         <img src="./src/assets/img/logo.svg" alt="Sunnyside"/>
                     </a>
                 </div>
+                <div id="icon-hamburger">
+                  <img src="./src/assets/img/icon-hamburger.svg"/>
+                </div>
                 <nav>
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="nav-link"><a href="#">About</a></li>
+                        <li class="nav-link"><a href="#">Services</a></li>
+                        <li class="nav-link"><a href="#">Projects</a></li>
+                        <li class="nav-link"><a href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
             <div id="banner">
-                <h1>We are creatives</h1>
+                <div>
+                  <h1>We are creatives</h1>
+                </div>
                 <img src="./src/assets/img/desktop/image-header.jpg" alt="banner">
             </div>
         </header>

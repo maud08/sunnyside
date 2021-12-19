@@ -11,6 +11,10 @@ header{
     width: calc(100% - 100px);
 }
 
+#icon-hamburger{
+    display: none;
+}
+
 nav{
     width: 25%;
     ul{
@@ -23,7 +27,6 @@ nav{
             &:hover{
                 background: $primaryWhite;
                 color: $primaryBlack;
-                font-family: "Fraunces";
                 border-radius: 25% / 50%;
             }
         }
@@ -32,30 +35,33 @@ nav{
 }
 
 #banner{
-    max-width: $desktopWidth;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
     position: relative;
-    h1{
+    &::after{
+        content: "";
+        background: url("/src/assets/img/icon-arrow-down.svg") no-repeat;
+        width: 36px;
+        height: 114px;
+        display: block;
+        left: 48%;
         position: absolute;
-        left: 24%;
-        top: 10%;
+        top: 45%;
+    }
+    div{
+        position: absolute;
+         top: 30vh;
         margin: 0;
-        &::after{
-            content: "";
-            background: url("/src/assets/img/icon-arrow-down.svg") no-repeat;
-            width: 36px;
-            height: 114px;
-            display: block;
-            left: 43%;
-            position: absolute;
-            top: 220%
-        }
+    }
+    h1{
+        text-align: center;
+        text-transform: uppercase;
     }
     img{
         max-width: 100%;
         height: auto;
         margin: 0 auto;
         display: block;
-        
     }
 }

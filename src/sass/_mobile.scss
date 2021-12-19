@@ -1,0 +1,94 @@
+@media screen and (min-width: $mobileWidth) and (max-width: $desktopWidth){
+    //HEADER
+    #banner {
+        &::after{
+            height: 79px;
+            left: 48%;
+            top: 33%;
+            background-size: 20px;
+        }
+        div{
+            top: 0;
+        }
+        h1{
+            font-size: 1.95rem;
+        }
+    }
+
+    //MENU
+    #icon-hamburger{
+        display: block;
+        position: fixed;
+        left: 90vw;
+        z-index: 1;
+    }
+    nav{
+        visibility: hidden;
+        position: fixed;
+        z-index: 1;
+        top: 10vh;
+        background: $primaryWhite;
+        left: 5%;
+        padding: 6vw;
+        width: calc(90% - 12vw);
+        transition: top 1s ease;
+        &.active{
+            visibility: visible;
+            top: 16vh;
+        }
+        ul{
+            flex-direction: column;
+            li{
+                padding: 1vh 0;
+            }
+            a{
+                color: $darkGrayishBlue;
+            }
+        }
+    }
+
+    //MAIN
+    .about{
+        .content{
+            order: revert;
+        }
+        img{
+            order: -1;
+        }
+        .content.inline {
+            flex: 1 1 100%;
+        }
+    }
+    .text-content{
+        padding: 10vh 9vw;
+    }
+    .inline .text  {
+        margin: 0;
+        h2 {
+            font-size: 1.5rem;
+        }
+        .text-content{
+            text-align: center;
+            max-width: 100%;
+            margin-top: 53vw;
+            font-size: 0.75rem;
+        }
+        
+    }
+
+    .testimonilas .content {
+        max-width: 100%;
+        padding: 4vh 8vw;
+    }
+
+    //GALLERY
+    .gallery {
+        flex-wrap : wrap;
+        div{
+            flex: 1 1 50%;
+        }
+        
+    }
+       
+
+}
